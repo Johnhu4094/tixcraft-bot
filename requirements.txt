@@ -1,0 +1,2 @@
+selenium==4.23.1
+python-telegram-bot==20.3
