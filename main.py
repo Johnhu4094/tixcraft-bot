@@ -17,7 +17,8 @@ url = 'https://api.line.me/v2/bot/message/push'
 TIXCRAFT_URL = "https://tixcraft.com/ticket/area/25_twice/20208"
 TARGET_ZONES = [
     "VIP區 $8800",
-    " 平面區 $6800"
+    "平面區 $6800",
+    "平面區 $5800"
 
 ]
 
