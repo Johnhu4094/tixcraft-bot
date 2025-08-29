@@ -94,8 +94,6 @@ if __name__ == "__main__":
             ticket_info = fetch_ticket_info()
             if ticket_info:
                 send_message(ticket_info)
-            else:
-                send_message("⚠️ mac找不到2025-11-23票券資訊")
         except Exception as e:
             send_message(f"❌ 抓取失敗: {e}")
         time.sleep(INTERVAL)
