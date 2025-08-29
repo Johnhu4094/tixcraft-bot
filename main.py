@@ -3,10 +3,15 @@ import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
+from dotenv import load_dotenv
+import os
 
+dotenv_path = ".env"
+load_dotenv(dotenv_path=dotenv_path)
+token = os.getenv("token")
 # === 設定 ===
 # 您的 Channel Access Token
-token = 'qUS1lBUKJs5HuQ8UPbQE82SNo8qsC4MJUAu3wtUStU4n13qD02rw9qzS+uom/1MGuYJuDIK1qF9VJ1HalDBZWivYAxeZ2CaMLERoEeKL39GzMQ1An3ATSicqRkbdXXuat5s0F8Aby4K58Re5IPo+rgdB04t89/1O/w1cDnyilFU='
+token = token
 url = 'https://api.line.me/v2/bot/message/push'
 
 TIXCRAFT_URL = "https://tixcraft.com/ticket/area/25_twice/20208"
